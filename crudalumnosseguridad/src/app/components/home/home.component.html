@@ -1,0 +1,16 @@
+<div class="container d-flex justify-content-center">
+	<div class="card p-4 shadow-sm">
+	  <h1 class="text-center mb-4">Login Usuario</h1>
+	  <form>
+		<div class="mb-3">
+		  <label for="username" class="form-label">Nombre de usuario</label>
+		  <input type="text" class="form-control" #cajauser placeholder="Introduce tu nombre">
+		</div>
+		<div class="mb-3">
+		  <label for="password" class="form-label">Contraseña</label>
+		  <input type="password" class="form-control" #cajapass placeholder="Introduce tu contraseña">
+		</div>
+		<button type="submit" class="btn btn-primary w-100" (click)="getToken()">Iniciar sesión</button>
+	  </form>
+	</div>
+  </div>

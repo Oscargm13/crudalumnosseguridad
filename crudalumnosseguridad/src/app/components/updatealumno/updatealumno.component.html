@@ -1,0 +1,32 @@
+<div class="container d-flex justify-content-center">
+	<div class="card p-4 shadow-sm">
+		<h1 class="text-center mb-4">Login Usuario</h1>
+		<form>
+			<div class="mb-3">
+				<label for="password" class="form-label">Id alumno</label>
+				<input type="text" class="form-control" #cajaid value="{{alumno.idAlumno}}">
+			</div>
+			<div class="mb-3">
+				<label for="username" class="form-label">Nombre</label>
+				<input type="text" class="form-control" #cajanombre placeholder="{{alumno.nombre}}">
+			</div>
+			<div class="mb-3">
+				<label for="password" class="form-label">Apellidos</label>
+				<input type="text" class="form-control" #cajaapellidos value="{{alumno.apellidos}}">
+			</div>
+			<div class="mb-3">
+				<label for="password" class="form-label">Imagen</label>
+				<input type="text" class="form-control" #cajaimagen value="{{alumno.imagen}}">
+			</div>
+			<div class="mb-3">
+				<label for="password" class="form-label">Id Curso</label>
+				<input type="text" class="form-control" #cajaidcurso value="{{alumno.idCurso}}">
+			</div>
+			<div class="mb-3">
+				<label for="password" class="form-label">Activo</label>
+				<input type="text" class="form-control" #cajaactivo value="{{alumno.activo}}">
+			</div>
+			<button type="submit" class="btn btn-primary w-100" (click)="editAlumno()">Iniciar sesión</button>
+		</form>
+	</div>
+</div>

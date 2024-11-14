@@ -1,0 +1,28 @@
+<div class="container d-flex justify-content-center">
+	<div class="card p-4 shadow-sm">
+		<h1 class="text-center mb-4">Tabla alumnos</h1>
+		<table class="table-bordered">
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Imagen</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				@for(alumno of alumnos; track alumno){
+				<tr>
+					<td>{{alumno.nombre}} {{alumno.apellidos}}</td>
+					<td>
+						<img src="{{alumno.imagen}}" alt="" style="width: 150px;">
+					</td>
+					<td>
+						<a [routerLink]="['/edit', alumno.idAlumno]" class="btn btn-info">Edit</a>
+						<!-- <a [routerLink]="['/edit', dept.idDepartamento]" class="btn btn-info">Edit</a> -->
+					</td>
+				</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
